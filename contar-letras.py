@@ -1,14 +1,10 @@
-
 #Contar letras:
 
+def diccionario_inverso(diccionario):
+    inverso = {}
+    for k, v in diccionario.items():
+        inverso[v] = k
+    return inverso
 
-def contar_letras(cadena):
-    frecuencia = {}
-    for letra in cadena:
-        if letra in frecuencia:
-            frecuencia[letra] += 1
-        else:
-            frecuencia[letra] = 1
-    return frecuencia
 
-print(contar_letras("hola mundo")) 
+print(diccionario_inverso({'a': 1, 'b': 2, 'c': 3}))  
