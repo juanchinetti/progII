@@ -1,4 +1,4 @@
-#trabajo-practico-de-programacion-(electronico)
+#trabajo-practico-de-programacion-(alimentos)
 
 """
     
@@ -28,38 +28,33 @@ incluyendo los atributos específicos de la clase hija.
 
 from producto import Producto  #Importa la clase Producto del archivo producto.py
 
-class Electronico(Producto):
-    def __init__(self, nombre, precio, cantidad, marca, modelo):
+class Alimento(Producto):
+    def __init__(self, nombre, precio, cantidad, fecha_expiracion):
         """
-        Constructor de la clase Electronico.
+        Constructor de la clase Alimento.
 
-        nombre: Nombre del producto.
-        precio: Precio del producto.
-        cantidad: Cantidad disponible del producto.
-        marca: Marca del producto electrónico.
-        modelo: Modelo del producto electrónico.
+         nombre: Nombre del producto.
+         precio: Precio del producto.
+         cantidad: Cantidad disponible del producto.
+         fecha_expiracion: Fecha de expiración del producto alimenticio.
         """
         #Llama al constructor de la clase padre Producto para inicializar atributos heredados
         super().__init__(nombre, precio, cantidad)
-        #Inicializa el atributo marca del producto electrónico
-        self.marca = marca
-        #Inicializa el atributo modelo del producto electrónico
-        self.modelo = modelo
+        #Inicializa el atributo fecha de expiración del producto alimenticio
+        self.fecha_expiracion = fecha_expiracion
 
     def mostrar_informacion(self):
         """
-        información completa del producto electrónico.
+        Muestra la información completa del producto alimenticio.
         """
         #Llama al método mostrar_informacion de la clase padre Producto
         super().mostrar_informacion()
-        #Imprime la marca del producto electrónico
-        print(f"Marca: {self.marca}")
-        #Imprime el modelo del producto electrónico
-        print(f"Modelo: {self.modelo}")
+        #Imprime la fecha de expiración del producto alimenticio
+        print(f"Fecha de Expiración: {self.fecha_expiracion}")
 
-#Crear instancia de Electronico y mostrar información
+#Crear instancia de Alimento y mostrar información
 if __name__ == "__main__":
-    #Crea una instancia de la clase Electronico con valores de ejemplo
-    electronico = Electronico("Laptop", 1500.0, 10, "Dell", "XPS 13")
+    #Crea una instancia de la clase Alimento con valores de ejemplo
+    alimento = Alimento("naranja", 0.5, 100, "2024-08-29")
     #Llama al método mostrar_informacion de la instancia creada para mostrar la información
-    electronico.mostrar_informacion()
+    alimento.mostrar_informacion()
