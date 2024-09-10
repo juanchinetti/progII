@@ -1,5 +1,4 @@
 #Ejercicio 1.4 - Contador con Reset
-#Este programa tiene tres botones: "Count Up" para incrementar, "Count Down" para decrementar, y "Reset" para poner el contador en cero.
 
 import tkinter as tk
 
@@ -26,8 +25,8 @@ contador_var = tk.StringVar(value="0")
 tk.Entry(ventana, textvariable=contador_var, state="readonly").pack()
 
 # Botones
-tk.Button(ventana, text="Count Up", command=incrementar).pack()
-tk.Button(ventana, text="Count Down", command=decrementar).pack()
+tk.Button(ventana, text="suma", command=incrementar).pack()
+tk.Button(ventana, text="resta", command=decrementar).pack()
 tk.Button(ventana, text="Reset", command=resetear).pack()
 
 ventana.mainloop()
