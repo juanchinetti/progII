@@ -32,7 +32,7 @@ def verificar_respuesta():
     
 ventana = tk.Tk()
 ventana.title("Juego Matemático")
-
+ 
 
 operacion_var = tk.StringVar()
 tk.Label(ventana, textvariable=operacion_var).grid(row=0, columnspan=2)
