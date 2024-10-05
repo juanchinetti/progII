@@ -29,7 +29,7 @@ def verificar_respuesta():
     else:
         resultado_var.set("Incorrecto!")
 
-
+    
 ventana = tk.Tk()
 ventana.title("Juego Matemático")
 
