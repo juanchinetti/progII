@@ -15,7 +15,7 @@ def validar_contraseña(password):
         return False
     return True
 
-# Validar el inicio de sesión
+#Validar el inicio de sesión
 def login():
     username = entry_username.get()
     password = entry_password.get()
