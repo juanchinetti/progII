@@ -14,7 +14,7 @@ def validar_contraseña(password):
     if not re.search(r'[0-9]', password): #un número
         return False
     return True
-
+                                    
 #Validar el inicio de sesión
 def login():
     username = entry_username.get()
