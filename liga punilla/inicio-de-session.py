@@ -33,7 +33,7 @@ root.title("Inicio de Sesión")
 root.geometry("800x600")  #Tamaño de ventana
 
 #Color de fondo de la ventana
-root.config(bg="#FFA500")
+root.config(bg="#FF914D")
 
 #Cargar y redimensionar la imagen del logo
 logo_path = "D:/Usuario/Pictures/imagenes de trabajo/Logo_Handball_(2).png"
@@ -42,21 +42,21 @@ image = image.resize((300, 200), Image.LANCZOS)
 logo = ImageTk.PhotoImage(image)
 
 #el logo en la ventana
-logo_label = tk.Label(root, image=logo, bg="#FFA500")
+logo_label = tk.Label(root, image=logo, bg="#FF914D")
 logo_label.pack(pady=5)  #para justar el espacio alrededor de la imagen
 
 # Título de la interfazdos
-label_title = tk.Label(root, text="Inicio de Sesión", font=("Arial", 18, "bold"), bg="#FFA500", fg="black")
+label_title = tk.Label(root, text="Inicio de Sesión", font=("Arial", 18, "bold"), bg="#FF914D", fg="black")
 label_title.pack(pady=10)  #Espacio superior e inferior del título
 
 #Nombre de usuario
-label_username = tk.Label(root, text="Nombre de Usuario:", bg="#FFA500", fg="#000000", font=("Arial", 14, "bold"))
+label_username = tk.Label(root, text="Nombre de Usuario:", bg="#FF914D", fg="#000000", font=("Arial", 14, "bold"))
 label_username.pack(pady=5)
 entry_username = tk.Entry(root, font=("Arial", 12))
 entry_username.pack(pady=5, ipadx=20, ipady=5)
 
 #Contraseña
-label_password = tk.Label(root, text="Contraseña:", bg="#FFA500", fg="#000000", font=("Arial", 14, "bold"))
+label_password = tk.Label(root, text="Contraseña:", bg="#FF914D", fg="#000000", font=("Arial", 14, "bold"))
 label_password.pack(pady=5)
 entry_password = tk.Entry(root, show="*", font=("Arial", 12))
 entry_password.pack(pady=5, ipadx=20, ipady=5)
